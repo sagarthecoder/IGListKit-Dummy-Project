@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -36,8 +37,8 @@
                             <action selector="seeALLButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="ijB-oL-z2k"/>
                         </connections>
                     </button>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="p2i-bp-pfS">
-                        <rect key="frame" x="12" y="92" width="417" height="135"/>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="p2i-bp-pfS">
+                        <rect key="frame" x="0.0" y="57" width="441" height="170"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="tintColor" systemColor="systemTealColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="L93-hc-Ygy">
@@ -51,14 +52,14 @@
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="p2i-bp-pfS" secondAttribute="bottom" id="6NU-da-cRQ"/>
+                <constraint firstAttribute="bottom" secondItem="p2i-bp-pfS" secondAttribute="bottom" id="7Oy-af-KKt"/>
                 <constraint firstItem="IfQ-w2-Jf6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="Cgb-pA-bJm"/>
-                <constraint firstItem="p2i-bp-pfS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="Gw6-22-2fb"/>
-                <constraint firstAttribute="trailing" secondItem="p2i-bp-pfS" secondAttribute="trailing" constant="12" id="TqX-dF-voH"/>
                 <constraint firstItem="IfQ-w2-Jf6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="d3b-vF-MTa"/>
-                <constraint firstItem="p2i-bp-pfS" firstAttribute="top" secondItem="IfQ-w2-Jf6" secondAttribute="bottom" constant="50" id="d5I-CY-R7e"/>
                 <constraint firstItem="PWY-u4-YnB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="n2E-4t-TKw"/>
                 <constraint firstAttribute="trailing" secondItem="PWY-u4-YnB" secondAttribute="trailing" constant="12" id="obz-qX-sW1"/>
+                <constraint firstItem="p2i-bp-pfS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rXN-RT-97P"/>
+                <constraint firstAttribute="trailing" secondItem="p2i-bp-pfS" secondAttribute="trailing" id="tTl-CC-No8"/>
+                <constraint firstItem="p2i-bp-pfS" firstAttribute="top" secondItem="PWY-u4-YnB" secondAttribute="bottom" constant="15" id="vLf-E6-3g2"/>
             </constraints>
             <size key="customSize" width="441" height="227"/>
             <connections>

@@ -20,7 +20,12 @@ class RootCollectionViewCell: UICollectionViewCell {
     let loader = AddingModelsData()
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.clipsToBounds = false
+        self.layer.masksToBounds = false
+        self.collectionView.clipsToBounds = false
+        self.collectionView.layer.masksToBounds = false
         print("from rootcollectioncell")
+        print("checking RootCollectionViewCell");
         
         //adapter.dataSource = UserListViewController()
         

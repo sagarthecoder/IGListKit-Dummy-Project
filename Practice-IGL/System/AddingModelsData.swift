@@ -14,7 +14,7 @@ class AddingModelsData: NSObject {
     var headerList : [Header] = []
     func setItemsToUser()
     {
-        let entries = [
+        var entries = [
             User(id: 1, name: "Sagar",imageName : "1.jpeg"),
             User(id: 2, name: "Ashik", imageName: "2.jpeg"),
             User(id: 3, name: "Siam", imageName: "3.jpeg"),
@@ -41,6 +41,9 @@ class AddingModelsData: NSObject {
 //            User(id: 23, name: "Ashik823"),
 //            User(id: 24, name: "Siam911")
         ]
+        for  i in 12...1000 {
+            entries.append(User(id: i, name: "abc"+String(i), imageName: "5.jpeg"))
+        }
         self.userList = entries
         
         self.newUserList = [
@@ -75,7 +78,11 @@ class AddingModelsData: NSObject {
             Header(categotyName: "DEF"),
             Header(categotyName: "GHI"),
             Header(categotyName: "IJK"),
+            
         ]
+        for i in 0...1000 {
+            self.headerList.append(Header(categotyName: "omg"+String(i)))
+        }
     }
     
     func setItemsToOffice()
