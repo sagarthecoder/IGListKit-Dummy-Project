@@ -23,7 +23,6 @@ class RootSectionController: ListSectionController{
         inset = UIEdgeInsets(top: 0, left: 0, bottom: 8, right: 0)
         loader.setItemsToUser()
     }
-
 }
 
 extension RootSectionController {
