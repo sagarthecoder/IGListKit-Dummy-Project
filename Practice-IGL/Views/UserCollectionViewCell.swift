@@ -15,9 +15,13 @@ class UserCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
         self.clipsToBounds = false
         self.layer.masksToBounds = false
-        print("user collection cell")
+    }
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        self.imageView.image = nil
     }
 
 }

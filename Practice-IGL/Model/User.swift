@@ -26,11 +26,11 @@ extension User: ListDiffable {
     }
 
     func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
-//        if let object = object as? User {
-//              return id == object.id
-//            }
-           // return false
-        return true;
-    }
 
+        if (object as? User) != nil  {
+            return true
+        } else {
+            return false
+        }
+    }
 }
